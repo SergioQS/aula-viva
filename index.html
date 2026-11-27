@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aula Viva · Cultivándonos en La Chagra</title>
+  <meta name="description" content="Cultivándonos: una propuesta pedagógica, sensible y comunitaria para el Aula Viva y La Chagra. Sembrar, cuidar y cosechar: aprender con otros seres y dejar registro de lo vivido.">
+  <meta name="theme-color" content="#2d5a3b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aula Viva · Cultivándonos">
+  <meta property="og:description" content="Un proyecto comunitario para aprender cuidando la chagra: siembra, bitácora y cosecha.">
+  <meta property="og:image" content="assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3C26 9 27 21 16 29 5 21 6 9 16 3Z' fill='%232d5a3b'/%3E%3Cpath d='M16 7v20' stroke='%23dfe8d5' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/fraunces-latin-full-normal.woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/md/p25.webp">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>document.documentElement.classList.remove('no-js')</script>
+</head>
+<body>
+
+<!-- Sprite de pequeños dibujos reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="rule" viewBox="0 0 168 18">
+    <path d="M10 9H150" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M150 9c3-6 11-7 16-4-4 5-11 6-16 4Z" fill="currentColor"/>
+    <path d="M150 9c3 5 9 7 13 6" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M10 9C7 5 3 5 1.5 8c2 3 6 3 8.5 1Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="leaf" viewBox="0 0 13 17">
+    <path d="M6.5 1C12 5 12.2 11.5 6.5 16 .8 11.5 1 5 6.5 1Z"/>
+  </symbol>
+  <symbol id="chev-l" viewBox="0 0 20 20"><path d="M12.5 4 6.5 10l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="chev-r" viewBox="0 0 20 20"><path d="m7.5 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="full" viewBox="0 0 20 20"><path d="M3 7.5V3h4.5M17 7.5V3h-4.5M3 12.5V17h4.5M17 12.5V17h-4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="close" viewBox="0 0 20 20"><path d="m5 5 10 10M15 5 5 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="down" viewBox="0 0 20 20"><path d="M10 3v13m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="file" viewBox="0 0 20 20"><path d="M5 2.5h6.5L16 7v10.5H5Z M11.5 2.5V7H16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10.5 10v5m-2-2 2 2 2-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="sprout" viewBox="0 0 32 32"><path d="M16 29V15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 16C16 10 12 6 5 6c0 6 4 10 11 10Z" fill="currentColor" opacity=".25" stroke="currentColor" stroke-width="1.5"/><path d="M16 19c0-6 4-10 11-10 0 6-4 10-11 10Z" fill="currentColor" opacity=".25" stroke="currentColor" stroke-width="1.5"/></symbol>
+</svg>
+
+<header class="topnav" id="topnav">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Aula Viva, inicio">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C26 9 27 21 16 29 5 21 6 9 16 3Z" fill="currentColor"/><path d="M16 8v19M16 15l-4-3M16 20l4-3" stroke="#f7f4ec" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+      Aula Viva
+    </a>
+    <nav aria-label="Secciones">
+      <ul>
+        <li><a href="#presentacion">Presentación</a></li>
+        <li class="opt"><a href="#proyecto">Proyecto</a></li>
+        <li class="opt"><a href="#especies">Especies</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li class="opt2"><a href="#equipo">Equipo</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= PORTADA ================= -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="hero-sprig" aria-hidden="true"><svg viewBox="0 0 120 160" aria-hidden="true"><g class="sway" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 156c12-3 24-3 36 0s24 3 36 0" stroke-width="1.2" opacity=".55"/><path d="M60 156C59 120 61 80 60 34"/><path d="M60 110C52 100 46 92 40 70"/><path d="M60 92C68 82 74 72 80 56"/><path d="M60 132l-12.2 6.8" stroke-width="1"/><path d="M60 132l-13.5 3.6" stroke-width="1"/><path d="M60 132l-14.0 0.2" stroke-width="1"/><path d="M60 132l-13.6 -3.1" stroke-width="1"/><path d="M60 132l-12.5 -6.4" stroke-width="1"/><path d="M60 132l-10.6 -9.2" stroke-width="1"/><path d="M60 132l-8.0 -11.5" stroke-width="1"/><path d="M60 132l5.0 -13.1" stroke-width="1"/><path d="M60 132l8.0 -11.5" stroke-width="1"/><path d="M60 132l10.6 -9.2" stroke-width="1"/><path d="M60 132l12.5 -6.4" stroke-width="1"/><path d="M60 132l13.6 -3.1" stroke-width="1"/><path d="M60 132l14.0 0.2" stroke-width="1"/><path d="M60 132l13.5 3.6" stroke-width="1"/><path d="M60 118l-12.8 5.7" stroke-width="1"/><path d="M60 118l-13.8 2.4" stroke-width="1"/><path d="M60 118l-14.0 -1.0" stroke-width="1"/><path d="M60 118l-13.3 -4.3" stroke-width="1"/><path d="M60 118l-11.9 -7.4" stroke-width="1"/><path d="M60 118l-9.7 -10.1" stroke-width="1"/><path d="M60 118l-7.0 -12.1" stroke-width="1"/><path d="M60 120l3.9 -13.5" stroke-width="1"/><path d="M60 120l7.0 -12.1" stroke-width="1"/><path d="M60 120l9.7 -10.1" stroke-width="1"/><path d="M60 120l11.9 -7.4" stroke-width="1"/><path d="M60 120l13.3 -4.3" stroke-width="1"/><path d="M60 120l14.0 -1.0" stroke-width="1"/><path d="M60 120l13.8 2.4" stroke-width="1"/><path d="M48 98l-13.2 4.6" stroke-width="1"/><path d="M48 98l-13.9 1.2" stroke-width="1"/><path d="M48 98l-13.8 -2.2" stroke-width="1"/><path d="M48 98l-12.9 -5.5" stroke-width="1"/><path d="M48 98l-11.2 -8.4" stroke-width="1"/><path d="M48 98l-8.8 -10.9" stroke-width="1"/><path d="M48 98l-5.9 -12.7" stroke-width="1"/><path d="M74 78l2.7 -13.7" stroke-width="1"/><path d="M74 78l5.9 -12.7" stroke-width="1"/><path d="M74 78l8.8 -10.9" stroke-width="1"/><path d="M74 78l11.2 -8.4" stroke-width="1"/><path d="M74 78l12.9 -5.5" stroke-width="1"/><path d="M74 78l13.8 -2.2" stroke-width="1"/><path d="M74 78l13.9 1.2" stroke-width="1"/><path d="M60 72l-12.2 6.8" stroke-width="1"/><path d="M60 72l-13.5 3.6" stroke-width="1"/><path d="M60 72l-14.0 0.2" stroke-width="1"/><path d="M60 72l-13.6 -3.1" stroke-width="1"/><path d="M60 72l-12.5 -6.4" stroke-width="1"/><path d="M60 72l-10.6 -9.2" stroke-width="1"/><path d="M60 72l-8.0 -11.5" stroke-width="1"/><path d="M60 60l5.0 -13.1" stroke-width="1"/><path d="M60 60l8.0 -11.5" stroke-width="1"/><path d="M60 60l10.6 -9.2" stroke-width="1"/><path d="M60 60l12.5 -6.4" stroke-width="1"/><path d="M60 60l13.6 -3.1" stroke-width="1"/><path d="M60 60l14.0 0.2" stroke-width="1"/><path d="M60 60l13.5 3.6" stroke-width="1"/><path d="M60 34L43.1 27.8" stroke-width="1"/><circle cx="43.1" cy="27.8" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L45.7 23.0" stroke-width="1"/><circle cx="45.7" cy="23.0" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L49.7 19.3" stroke-width="1"/><circle cx="49.7" cy="19.3" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L54.6 16.8" stroke-width="1"/><circle cx="54.6" cy="16.8" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L60.0 16.0" stroke-width="1"/><circle cx="60.0" cy="16.0" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L65.4 16.8" stroke-width="1"/><circle cx="65.4" cy="16.8" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L70.3 19.3" stroke-width="1"/><circle cx="70.3" cy="19.3" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L74.3 23.0" stroke-width="1"/><circle cx="74.3" cy="23.0" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L76.9 27.8" stroke-width="1"/><circle cx="76.9" cy="27.8" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L29.7 64.2" stroke-width="1"/><circle cx="29.7" cy="64.2" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L32.0 60.5" stroke-width="1"/><circle cx="32.0" cy="60.5" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L35.6 57.9" stroke-width="1"/><circle cx="35.6" cy="57.9" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L40.0 57.0" stroke-width="1"/><circle cx="40.0" cy="57.0" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L44.4 57.9" stroke-width="1"/><circle cx="44.4" cy="57.9" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L48.0 60.5" stroke-width="1"/><circle cx="48.0" cy="60.5" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L50.3 64.2" stroke-width="1"/><circle cx="50.3" cy="64.2" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L69.7 50.2" stroke-width="1"/><circle cx="69.7" cy="50.2" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L72.0 46.5" stroke-width="1"/><circle cx="72.0" cy="46.5" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L75.6 43.9" stroke-width="1"/><circle cx="75.6" cy="43.9" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L80.0 43.0" stroke-width="1"/><circle cx="80.0" cy="43.0" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L84.4 43.9" stroke-width="1"/><circle cx="84.4" cy="43.9" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L88.0 46.5" stroke-width="1"/><circle cx="88.0" cy="46.5" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L90.3 50.2" stroke-width="1"/><circle cx="90.3" cy="50.2" r="2.3" fill="#e7b53a" stroke-width=".9"/></g></svg></div>
+      <p class="kicker">Proyecto comunitario · La Chagra</p>
+      <h1><span>Aula</span><span class="viva">Viva</span></h1>
+      <p class="tagline">Cultivándonos: un aula viva para aprender y cuidar</p>
+      <p class="lead">Una propuesta pedagógica, sensible y comunitaria: cada grupo sostiene viva una cama de cultivo durante el semestre, y cada persona lleva una bitácora de su vínculo con una planta.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#presentacion">Ver la presentación <svg aria-hidden="true"><use href="#down"/></svg></a>
+        <a class="btn btn-ghost" href="#galeria">Ir a la galería</a>
+      </div>
+    </div>
+
+    <div class="hero-collage" aria-label="Fotografías de la chagra">
+      <figure class="photo-print c1">
+        <img src="assets/md/p25.webp" width="1100" height="825" alt="Vista de las camas de cultivo de la chagra con la maloca al fondo">
+      </figure>
+      <figure class="photo-print c2">
+        <span class="tape" aria-hidden="true"></span>
+        <img src="assets/thumb/p42.webp" alt="Una mano acomoda la tierra alrededor de una planta recién sembrada">
+        <figcaption>manos en la tierra</figcaption>
+      </figure>
+      <figure class="photo-print c3">
+        <span class="tape" aria-hidden="true"></span>
+        <img src="assets/thumb/p33.webp" alt="Planta de kale toscano de hojas azuladas">
+        <figcaption>kale toscano</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRESENTACIÓN ================= -->
+<section class="deck-section" id="presentacion" aria-labelledby="deck-title">
+  <div class="wrap">
+    <div class="deck-head">
+      <div>
+        <p class="kicker"><span class="num">01</span> La presentación</p>
+        <h2 class="section-title" id="deck-title">Cultivándonos, <em>diapositiva a diapositiva</em></h2>
+      </div>
+      <p class="hint">usa las flechas, desliza o toca una hoja ↓</p>
+    </div>
+
+    <div class="deck" id="deck">
+      <div class="deck-stage" id="deck-stage" tabindex="0" role="region" aria-roledescription="presentación" aria-label="Presentación Cultivándonos" aria-live="polite">
+
+        <!-- 1 · Portada -->
+        <article class="slide l-cover is-active" data-title="Cultivándonos" aria-label="Diapositiva 1 de 21">
+          <figure class="media" style="margin:0"><img src="assets/md/p09.webp" alt="El grupo trabaja la tierra en la chagra frente al invernadero, con luz de tarde" style="object-position:50% 45%"></figure>
+          <div class="card">
+            <p class="s-kick">Proyecto comunitario</p>
+            <h3>Cultivándonos</h3>
+            <p class="sub">un aula viva para aprender y cuidar</p>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>Cultivo, alimentación y convivencia con otros seres como experiencias de aprendizaje.</p>
+            <p class="meta">Propuesta pedagógica, sensible y comunitaria · Aula Viva — La Chagra</p>
+          </div>
+        </article>
+
+        <!-- 2 · Equipo -->
+        <article class="slide l-split" data-title="Equipo">
+          <div class="s-body">
+            <p class="s-kick">Equipo</p>
+            <h3>Quienes cultivan este proyecto</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>Un proyecto comunitario hecho entre muchas manos: cada persona sostiene una parte del proceso.</p>
+            <div class="names">
+              <p>Valeria Stephania Gamba Camargo</p>
+<p>Juan Pablo Prieto Vergara</p>
+<p>Nicolás Cepeda Martínez</p>
+<p>Manuela Rivera Gutiérrez</p>
+<p>Sergio Quiroga Sandoval</p>
+<p>Santiago Diaz Aroca</p>
+<p>Neyler Corrales Lario</p>
+<p>Jaime Alejandro Cuellar Gonzalez</p>
+<p>Solangie Fernandez Rojas</p>
+<p>Oscar Javier Martinez Zambrano</p>
+<p>Daniela Andrea Blanco Forero</p>
+            </div>
+          </div>
+          <figure class="media"><img src="assets/md/p08.webp" alt="Tres integrantes del equipo sonríen en la chagra" loading="lazy" decoding="async" style="object-position:50% 40%"></figure>
+        </article>
+
+        <!-- 3 · Punto de partida -->
+        <article class="slide l-split" data-title="Punto de partida">
+          <div class="s-body">
+            <p class="s-kick">Punto de partida</p>
+            <h3>El proyecto nace de un<br>espacio que ya está vivo</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <ul class="dots">
+              <li>El aula viva reúne plantas, animales, personas, alimentos y conocimientos.</li>
+              <li>La propuesta parte de observar el lugar, reconocerlo y asumir responsabilidad por su cuidado.</li>
+              <li>La siembra no es solo un ejercicio productivo: es una práctica colectiva que se sostiene en el tiempo.</li>
+            </ul>
+          </div>
+          <figure class="media"><img src="assets/md/p04.webp" alt="Personas trabajando en las camas junto al invernadero y una casa con mural" loading="lazy" decoding="async"></figure>
+        </article>
+
+        <!-- 4 · La propuesta -->
+        <article class="slide l-split rev" data-title="La propuesta">
+          <figure class="media"><img src="assets/md/p03.webp" alt="Una integrante trabaja entre plantas y ollas de barro" loading="lazy" decoding="async"></figure>
+          <div class="s-body">
+            <p class="s-kick">La propuesta</p>
+            <h3>Una propuesta pedagógica,<br>sensible y comunitaria</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>El aprendizaje surge del contacto directo con la tierra y del seguimiento cercano a los procesos de vida que allí se desarrollan.</p>
+            <div class="numbered" style="margin-top:1cqw">
+              <div><span class="n">01</span><div><h4>Aprendizaje integral y biológico</h4><p>La biología se aprende de forma amigable, observando y acompañando lo que crece.</p></div></div>
+              <div><span class="n">02</span><div><h4>Cuidado del territorio</h4><p>El aula viva y la chagra se asumen como un territorio que se cuida entre todos.</p></div></div>
+              <div><span class="n">03</span><div><h4>Registro sensible</h4><p>La bitácora personal reúne dibujos, sensaciones y observaciones a lo largo del proceso.</p></div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 · Gobernanza -->
+        <article class="slide l-split" data-title="Gobernanza">
+          <div class="s-body">
+            <p class="s-kick">Gobernanza</p>
+            <h3>Reconocer la<br>gobernanza del aula viva</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <div class="numbered" style="gap:3cqw">
+              <div><span class="n">01</span><div><h4>Organizar la chagra</h4><p>La chagra se organiza en camas de cultivo y combina alimentos, condimentos, plantas medicinales y flores.</p></div></div>
+              <div><span class="n">02</span><div><h4>Cuidar con conciencia</h4><p>El cuidado incluye limpiar, sembrar, alimentar, regar y cosechar con conciencia.</p></div></div>
+            </div>
+          </div>
+          <figure class="media"><img src="assets/md/p27.webp" alt="Caléndulas en flor junto a una col morada" loading="lazy" decoding="async"></figure>
+        </article>
+
+        <!-- 6 · Responsabilidad compartida -->
+        <article class="slide l-band" data-title="Responsabilidad compartida">
+          <figure class="media" style="margin:0"><img src="assets/md/p13.webp" alt="Varias personas trabajan cada una en su cama de cultivo" loading="lazy" decoding="async" style="object-position:50% 45%"></figure>
+          <div class="s-body">
+            <p class="s-kick">Responsabilidad compartida</p>
+            <h3>Cada grupo sostiene una cama de cultivo</h3>
+            <p style="margin-top:1.2cqw">Las camas y subcamas se asignan por grupos de trabajo: cada uno las mantiene vivas hasta la cosecha.</p>
+            <div class="cards">
+              <div class="card-s"><h4>Riego constante</h4><p>El agua se revisa y se reparte en cada visita a la chagra.</p></div>
+              <div class="card-s"><h4>Nutrición del suelo</h4><p>El abono y la materia orgánica del bosque alimentan la cama.</p></div>
+              <div class="card-s"><h4>Atención continua</h4><p>Deshierbe, abonado y observación semana a semana.</p></div>
+            </div>
+            <p class="s-note">Sostener en el tiempo es parte del aprendizaje: la cama depende del grupo, no de una sola persona.</p>
+          </div>
+        </article>
+
+        <!-- 7 · Especies -->
+        <article class="slide l-split" data-title="Especies cultivadas">
+          <div class="s-body">
+            <p class="s-kick">Especies cultivadas</p>
+            <h3>Aromáticas y medicinales<br>que se cuidan con las manos</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>El trabajo se centra en las plantas sembradas en el lugar: se conocen por el olor, la forma y el cuidado cotidiano.</p>
+            <div class="species" style="margin-top:.8cqw">
+              <p><b>Orégano</b>Aroma intenso, hojas pequeñas y generosas.</p>
+              <p><b>Salvia</b>Flores moradas y olor profundo.</p>
+              <p><b>Albahaca</b>Hojas suaves, aroma dulce y fresco.</p>
+              <p><b>Yerba buena</b>Rastrera, fresca, se expande sola.</p>
+              <p><b>Hinojo</b>Alta y plumosa, aroma anisado.</p>
+            </div>
+          </div>
+          <figure class="media"><img src="assets/md/p39.webp" alt="Una cama tupida de plantas aromáticas" loading="lazy" decoding="async"></figure>
+        </article>
+
+        <!-- 8 · Cultura -->
+        <article class="slide l-split rev big-title" data-title="Cultura">
+          <figure class="media"><img src="assets/md/p24.webp" alt="Una mano sostiene un frasco de vidrio lleno de semillas" loading="lazy" decoding="async"></figure>
+          <div class="s-body" style="justify-content:center">
+            <p class="s-kick">Cultura</p>
+            <h3>Hacer cultura<br>a partir de<br>la tierra</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>Sembrar conserva y comparte saberes sobre semillas, alimentación y formas de cultivar.</p>
+            <p>La huerta también puede fortalecer la economía para la vida y los mingas comunitarios.</p>
+          </div>
+        </article>
+
+        <!-- 9 · Aprender haciendo -->
+        <article class="slide l-band" data-title="Aprender haciendo">
+          <figure class="media" style="margin:0"><img src="assets/md/p18.webp" alt="Un integrante con sombrero trabaja agachado en su cama" loading="lazy" decoding="async" style="object-position:50% 55%"></figure>
+          <div class="s-body">
+            <p class="s-kick">Comunidad y educación</p>
+            <h3>Aprender haciendo</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <div class="numbered cols">
+              <div><span class="n">01</span><h4>Responsabilidad</h4><p>Cada persona que habita el espacio puede hacerse responsable de una planta, desde la siembra hasta la cosecha.</p></div>
+              <div><span class="n">02</span><h4>Aprendizaje situado</h4><p>La participación convierte el aula viva en una experiencia de colaboración y aprendizaje situado.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10 · Bienestar compartido -->
+        <article class="slide l-split" data-title="Bienestar compartido">
+          <div class="s-body">
+            <p class="s-kick">Bienestar compartido</p>
+            <h3>La diversidad también<br>produce bienestar</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>Reconocer esa red de vida ayuda a comprender que el bienestar es compartido.</p>
+            <div class="cards" style="--cols:2">
+              <div class="card-s"><h4>Seres humanos</h4><p>Personas que habitan y cuidan.</p></div>
+              <div class="card-s"><h4>Animales</h4><p>Grandes y pequeños.</p></div>
+              <div class="card-s" style="grid-column:1/-1"><h4>Otros organismos</h4><p>Abejas, cochinillos, pájaros, lombrices, chiquitos y plantas.</p></div>
+            </div>
+          </div>
+          <figure class="media"><img src="assets/md/p31.webp" alt="Cartuchos blancos en flor entre el follaje" loading="lazy" decoding="async"></figure>
+        </article>
+
+        <!-- 11 · Participación -->
+        <article class="slide l-split" data-title="Participación">
+          <div class="s-body">
+            <p class="s-kick">Participación</p>
+            <h3>Participar es sembrar,<br>cuidar y cosechar</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <div class="numbered" style="gap:1.4cqw">
+              <div><span class="n">01</span><p style="align-self:center">Elegir una planta y conocer sus necesidades.</p></div>
+              <div><span class="n">02</span><p style="align-self:center">Sembrar y acompañar su crecimiento.</p></div>
+              <div><span class="n">03</span><p style="align-self:center">Cuidar el suelo, el agua y el entorno.</p></div>
+              <div><span class="n">04</span><p style="align-self:center">Cosechar y reconocer el aprendizaje compartido.</p></div>
+            </div>
+          </div>
+          <figure class="media"><img src="assets/md/p40.webp" alt="Una canasta verde llena de plántulas lista para sembrar" loading="lazy" decoding="async"></figure>
+        </article>
+
+        <!-- 12 · Observar para aprender -->
+        <article class="slide" data-title="Observar para aprender">
+          <div class="s-body">
+            <p class="s-kick">Observar para aprender</p>
+            <h3>Las plantas cuentan historias distintas</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <div class="photo-cards">
+              <div><img src="assets/md/p26.webp" alt="Kale rizado y lechuga en la cama" loading="lazy" decoding="async"><h4>Hojas</h4></div>
+              <div><img src="assets/md/p32.webp" alt="Margaritas blancas con centro azul" loading="lazy" decoding="async"><h4>Flores</h4><p>La huerta reúne variedades de hojas, flores, aromáticas y alimentos.</p></div>
+              <div><img src="assets/md/p28.webp" alt="Hojas anchas y brillantes vistas desde arriba" loading="lazy" decoding="async"><h4>Formas y texturas</h4><p>Observar sus formas, colores y texturas permite aprender desde la experiencia.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13 · Kale toscano -->
+        <article class="slide l-split" data-title="El kale toscano">
+          <div class="s-body">
+            <p class="s-kick">Reconocimiento</p>
+            <h3>El kale toscano: un ejemplo<br>de cuidado y reconocimiento</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>Nombrar las plantas ayuda a reconocerlas y a valorar su presencia en la huerta.</p>
+            <p>El cultivo se vuelve una oportunidad para relacionar alimentación, observación y responsabilidad.</p>
+          </div>
+          <figure class="media"><img src="assets/md/p33.webp" alt="Kale toscano de hojas largas y azuladas" loading="lazy" decoding="async"></figure>
+        </article>
+
+        <!-- 14 · Ecosistema -->
+        <article class="slide l-split" data-title="Ecosistema">
+          <div class="s-body">
+            <p class="s-kick">Ecosistema</p>
+            <h3>También aprendemos de<br>los pequeños habitantes</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>Insectos y otros organismos hacen visible que el aula viva es un ecosistema.</p>
+            <div class="numbered cols" style="--cols:3;margin:1cqw 0 1.6cqw">
+              <div><span class="n">01</span><h4>Observar</h4></div>
+              <div><span class="n">02</span><h4>Relacionar</h4></div>
+              <div><span class="n">03</span><h4>Cuidar</h4></div>
+            </div>
+            <p>La observación atenta permite comprender relaciones entre plantas, animales y cuidado.</p>
+          </div>
+          <figure class="media"><img src="assets/md/p23.webp" alt="Una plántula asoma en la tierra húmeda" loading="lazy" decoding="async"></figure>
+        </article>
+
+        <!-- 15 · Metodología -->
+        <article class="slide" data-title="La ruta del semestre">
+          <div class="s-body">
+            <p class="s-kick">Metodología</p>
+            <h3>La ruta del semestre</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>La propuesta se organiza en tres momentos a lo largo del periodo académico.</p>
+            <div class="phases">
+              <div><small>FASE 1</small><h4>Elegir y abrir la bitácora</h4><p>Cada integrante elige una planta de su cama y comienza su registro personal.</p></div>
+              <div><small>FASE 2</small><h4>Cuidar y hacer seguimiento</h4><p>Visitas periódicas de deshierbe, abonado y riego, con observación y registro.</p></div>
+              <div><small>FASE 3</small><h4>Cosechar y consolidar</h4><p>Cosecha colectiva y bitácora consolidada como documento final del proceso.</p></div>
+            </div>
+            <div class="callout"><p>Un mismo hilo: la bitácora personal atraviesa las tres fases y se convierte en el registro del vínculo con el espacio.</p></div>
+          </div>
+        </article>
+
+        <!-- 16 · Fase 1 -->
+        <article class="slide l-split" data-title="Fase 1">
+          <div class="s-body">
+            <p class="s-kick">Fase 1</p>
+            <h3>Elegir una planta<br>y abrir la bitácora</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>Cada integrante recorre su cama y elige una planta por afinidad, curiosidad o gusto personal.</p>
+            <div class="defs" style="margin-top:.8cqw">
+              <div><h4>Registro gráfico</h4><p>Un dibujo a mano de la planta elegida.</p></div>
+              <div><h4>Reflexión sensible</h4><p>Las sensaciones, emociones o motivos que llevaron a elegirla.</p></div>
+              <div><h4>Ficha biológica básica</h4><p>Sus características, sus partes y lo que necesita para crecer: luz, agua y suelo.</p></div>
+            </div>
+          </div>
+          <figure class="media"><img src="assets/md/p14.webp" alt="Dos integrantes revisan juntas una cama de cultivo" loading="lazy" decoding="async"></figure>
+        </article>
+
+        <!-- 17 · Fase 2 -->
+        <article class="slide l-band" data-title="Fase 2">
+          <figure class="media" style="margin:0"><img src="assets/md/p19.webp" alt="Camas de cultivo con personas trabajando en la tarde" loading="lazy" decoding="async" style="object-position:50% 55%"></figure>
+          <div class="s-body">
+            <p class="s-kick">Fase 2</p>
+            <h3>Cuidado periódico y seguimiento</h3>
+            <p style="margin-top:1.2cqw">Los grupos asisten con regularidad a la chagra para las labores de mantenimiento y la observación de su planta.</p>
+            <div class="cards" style="--cols:4">
+              <div class="card-s"><h4>Deshierbe</h4><p>Retirar lo que compite con el cultivo y dejar respirar la cama.</p></div>
+              <div class="card-s"><h4>Abonado</h4><p>Aportar materia orgánica y mantener la nutrición del suelo.</p></div>
+              <div class="card-s"><h4>Riego</h4><p>Sostener la humedad sin exagerar: cada visita, una revisión.</p></div>
+              <div class="card-s"><h4>Registro</h4><p>Observación semanal en la bitácora, con dibujos y fotografías.</p></div>
+            </div>
+            <p class="s-note">La constancia importa más que la cantidad: la cama se sostiene con visitas cortas y frecuentes.</p>
+          </div>
+        </article>
+
+        <!-- 18 · Fase 3 -->
+        <article class="slide l-split" data-title="Fase 3">
+          <div class="s-body">
+            <p class="s-kick">Fase 3</p>
+            <h3>Cosecha y<br>consolidación final</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>Al finalizar el semestre se realiza la cosecha colectiva del material sembrado por los grupos.</p>
+            <div class="defs" style="margin-top:.8cqw">
+              <div><h4>Cosecha colectiva</h4><p>Lo sembrado se recoge entre todos, como cierre del trabajo compartido.</p></div>
+              <div><h4>Bitácora consolidada</h4><p>Observaciones, ilustraciones y registros fotográficos de todo el semestre.</p></div>
+              <div><h4>Documento de evaluación</h4><p>La libreta personal es el centro de la evaluación final del proceso.</p></div>
+            </div>
+          </div>
+          <figure class="media"><img src="assets/md/p12.webp" alt="Un integrante trabaja entre coles y kale" loading="lazy" decoding="async"></figure>
+        </article>
+
+        <!-- 19 · Articulación -->
+        <article class="slide" data-title="La chagra en red">
+          <div class="s-body">
+            <p class="s-kick">Articulación</p>
+            <h3>La chagra se sostiene en red</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>El sostenimiento del aula viva se realiza mediante la colaboración y el intercambio con los demás espacios.</p>
+            <div class="rows" style="margin-top:.6cqw">
+              <div><b>La Troja</b><span>Préstamo de herramientas para el trabajo de campo.</span></div>
+              <div><b>El Bosque</b><span>Aporte de abono y materia orgánica para nutrir el suelo.</span></div>
+              <div><b>Semillero y Placita</b><span>Suministro de semillas y plántulas.</span></div>
+              <div><b>Chagra Ta Sabia</b><span>Orientación y conocimiento sobre el manejo del territorio.</span></div>
+              <div><b>Cocina</b><span>Material orgánico para elaboración de compost.</span></div>
+              <div><b>Grupo de trabajo</b><span>Manos, trabajo colaborativo, riego continuo y dedicación.</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 20 · Resultados -->
+        <article class="slide l-split rev" data-title="Resultados esperados">
+          <figure class="media"><img src="assets/md/p29.webp" alt="Una planta sana crece junto a una olla de barro" loading="lazy" decoding="async"></figure>
+          <div class="s-body">
+            <p class="s-kick">Resultados esperados</p>
+            <h3>Qué queda al final<br>del semestre</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <div class="cards" style="--cols:1">
+              <div class="card-s"><h4>Camas vivas</h4><p>Mantener en óptimas condiciones de nutrición y riego las camas y subcamas de la chagra hasta la cosecha.</p></div>
+              <div class="card-s"><h4>Una libreta por persona</h4><p>Una libreta personal que refleje el aprendizaje biológico básico de las especies cuidadas y el vínculo con el espacio.</p></div>
+            </div>
+            <p class="s-note">Aprender biología cuidando una planta: el resultado es a la vez una cosecha y un registro.</p>
+          </div>
+        </article>
+
+        <!-- 21 · Cierre -->
+        <article class="slide l-cover" data-title="Cierre">
+          <figure class="media" style="margin:0"><img src="assets/md/p25.webp" alt="La chagra con la maloca al fondo" loading="lazy" decoding="async"></figure>
+          <div class="card">
+            <p class="s-kick">Cierre</p>
+            <h3>Cultivándonos</h3>
+            <svg class="s-rule" aria-hidden="true"><use href="#rule"/></svg>
+            <p>Sembrar, cuidar y cosechar: aprender con otros seres y dejar registro de lo vivido.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="deck-controls">
+        <div class="deck-nav">
+          <button class="deck-btn" id="deck-prev" aria-label="Diapositiva anterior"><svg><use href="#chev-l"/></svg></button>
+          <button class="deck-btn" id="deck-next" aria-label="Diapositiva siguiente"><svg><use href="#chev-r"/></svg></button>
+        </div>
+        <div class="vine" id="vine" role="tablist" aria-label="Ir a una diapositiva"><span class="stem-done" id="stem-done"></span></div>
+        <div class="deck-tools">
+          <span class="deck-count" id="deck-count">1 / 21</span>
+          <button class="deck-btn" id="deck-full" aria-label="Pantalla completa"><svg><use href="#full"/></svg></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="deck-below">
+      <span>Atajos: <kbd>←</kbd> <kbd>→</kbd> para avanzar · <kbd>F</kbd> pantalla completa</span>
+      <a href="assets/Cultivandonos_Chagra.pdf" download><svg aria-hidden="true"><use href="#file"/></svg> Descargar la presentación (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROYECTO ================= -->
+<section class="section" id="proyecto" aria-labelledby="proyecto-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker"><span class="num">02</span> El proyecto</p>
+      <h2 class="section-title" id="proyecto-title">Sembrar como <em>práctica colectiva</em></h2>
+      <svg class="vine-rule" aria-hidden="true"><use href="#rule"/></svg>
+    </div>
+
+    <div class="proposal-grid">
+      <blockquote class="pull reveal">
+        Entendemos la siembra no solo como un ejercicio productivo, sino como una práctica colectiva en la que cada grupo asume la responsabilidad de mantener viva una cama a lo largo del semestre.
+      </blockquote>
+      <div class="proposal-text reveal">
+        <p>La propuesta articula la vivencia en el Aula Viva y la Chagra desde una perspectiva que integra el cuidado del territorio, el aprendizaje biológico amigable y la reflexión sensible.</p>
+        <p>A través del riego constante, la nutrición del suelo y la atención continua de los cultivos, el aprendizaje surge del contacto directo con la tierra y del seguimiento cercano a los procesos de vida que allí se desarrollan.</p>
+        <div class="facts">
+          <div><small>Espacio</small><span>Aula Viva</span></div>
+          <div><small>Lugar de trabajo</small><span>La Chagra</span></div>
+          <div><small>Enfoque</small><span>Aprendizaje integral</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="route">
+      <div class="reveal">
+        <h3 class="route-title">La ruta del semestre</h3>
+        <p class="route-sub">Tres momentos continuos a lo largo del periodo académico.</p>
+      </div>
+      <div class="timeline">
+        <svg class="thread" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20C120 2 210 38 333 20S560 2 666 20 880 38 1000 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5 6" vector-effect="non-scaling-stroke"/></svg>
+
+        <article class="phase reveal">
+          <span class="seed"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M5 8c4-1.5 8-1 12 2v18c-4-3-8-3.5-12-2Z M29 8c-4-1.5-8-1-12 2v18c4-3 8-3.5 12-2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 14c2-.5 3.5-.3 5 .6M9 18c2-.5 3.5-.3 5 .6M20 14.6c1.5-.9 3-1.1 5-.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="when">fase 1</span>
+          <h4>Elección individual y apertura de la bitácora</h4>
+          <p>Con las camas asignadas, cada integrante recorre el espacio de su grupo y elige una planta por afinidad, curiosidad o gusto personal.</p>
+          <ul>
+            <li><b>Registro gráfico</b>Un dibujo a mano de la planta seleccionada.</li>
+            <li><b>Reflexión sensible</b>Las sensaciones, emociones o motivos que llevaron a elegirla.</li>
+            <li><b>Ficha biológica básica</b>Sus características, sus partes y lo que necesita para crecer: luz, agua y suelo.</li>
+          </ul>
+        </article>
+
+        <article class="phase reveal">
+          <span class="seed"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M8 13h13v13H8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M21 16l6-5 1.5 1.5M11 13c0-3 1.5-5 3.5-5s3.5 2 3.5 5M8 17c-3 0-4 2-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M29 15v2M31 18v2M28 20v2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+          <span class="when">fase 2</span>
+          <h4>Cuidado periódico y seguimiento</h4>
+          <p>Los grupos asisten con regularidad a la chagra para el deshierbe, el abonado y el riego. En cada visita, o de manera semanal, cada persona dedica un espacio a observar su planta y registrarla en la bitácora.</p>
+          <ul>
+            <li><b>Deshierbe</b>Retirar lo que compite con el cultivo.</li>
+            <li><b>Abonado y riego</b>Mantener la nutrición y la humedad del suelo.</li>
+            <li><b>Registro</b>Observaciones semanales con dibujos y fotografías.</li>
+          </ul>
+        </article>
+
+        <article class="phase reveal">
+          <span class="seed"><svg viewBox="0 0 34 34" aria-hidden="true"><path d="M5 15h24l-3 12H8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 15c0-5 3-8 7-8s7 3 7 8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 15c0-3 2-5 4-6M17 15c1-3 3-4 5-4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+          <span class="when">fase 3</span>
+          <h4>Cosecha y consolidación final</h4>
+          <p>Al finalizar el semestre se realiza la cosecha colectiva. La bitácora personal, consolidada con observaciones, ilustraciones y registros fotográficos, es el documento central de la evaluación final.</p>
+          <ul>
+            <li><b>Cosecha colectiva</b>Lo sembrado se recoge entre todos.</li>
+            <li><b>Bitácora consolidada</b>El registro de todo el semestre.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="thread-note reveal">Un mismo hilo: la bitácora atraviesa las tres fases y se convierte en el registro del vínculo con el espacio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ESPECIES ================= -->
+<section class="section species-section" id="especies" aria-labelledby="especies-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker"><span class="num">03</span> Especies cultivadas</p>
+      <h2 class="section-title" id="especies-title">Aromáticas y medicinales <em>que se conocen por el olor</em></h2>
+      <svg class="vine-rule" aria-hidden="true"><use href="#rule"/></svg>
+      <p class="section-lead">El trabajo se desarrolla con un grupo de plantas sembradas en el lugar, que permiten una interacción constante a través del olor, la forma y el cuidado cotidiano.</p>
+    </div>
+    <div class="herbs">
+      <article class="herb reveal" style="transition-delay:0ms"><svg viewBox="0 0 120 160" aria-hidden="true"><g class="sway" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 156c12-3 24-3 36 0s24 3 36 0" stroke-width="1.2" opacity=".55"/><path d="M60 156C59 120 62 84 60 40"/><path d="M60 118C50 108 42 100 34 74"/><path d="M60 96C70 86 80 76 86 52"/><ellipse cx="52.0" cy="140.0" rx="6.5" ry="4.6" transform="rotate(-20 52.0 140.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="68.0" cy="140.0" rx="6.5" ry="4.6" transform="rotate(20 68.0 140.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="52.0" cy="124.0" rx="6.5" ry="4.6" transform="rotate(-20 52.0 124.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="68.0" cy="124.0" rx="6.5" ry="4.6" transform="rotate(20 68.0 124.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="52.0" cy="106.0" rx="6.5" ry="4.6" transform="rotate(-20 52.0 106.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="68.0" cy="106.0" rx="6.5" ry="4.6" transform="rotate(20 68.0 106.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="52.0" cy="88.0" rx="6.5" ry="4.6" transform="rotate(-20 52.0 88.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="68.0" cy="88.0" rx="6.5" ry="4.6" transform="rotate(20 68.0 88.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="53.0" cy="70.0" rx="6.5" ry="4.6" transform="rotate(-20 53.0 70.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="69.0" cy="70.0" rx="6.5" ry="4.6" transform="rotate(20 69.0 70.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="52.0" cy="54.0" rx="6.5" ry="4.6" transform="rotate(-20 52.0 54.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="68.0" cy="54.0" rx="6.5" ry="4.6" transform="rotate(20 68.0 54.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="39.0" cy="106.0" rx="6" ry="4.2" transform="rotate(-35 39.0 106.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="52.0" cy="102.0" rx="6" ry="4.2" transform="rotate(15 52.0 102.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="33.0" cy="94.0" rx="6" ry="4.2" transform="rotate(-35 33.0 94.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="46.0" cy="90.0" rx="6" ry="4.2" transform="rotate(15 46.0 90.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="29.0" cy="82.0" rx="6" ry="4.2" transform="rotate(-35 29.0 82.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="42.0" cy="78.0" rx="6" ry="4.2" transform="rotate(15 42.0 78.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="68.0" cy="82.0" rx="6" ry="4.2" transform="rotate(-15 68.0 82.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="81.0" cy="86.0" rx="6" ry="4.2" transform="rotate(35 81.0 86.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="74.0" cy="70.0" rx="6" ry="4.2" transform="rotate(-15 74.0 70.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="87.0" cy="74.0" rx="6" ry="4.2" transform="rotate(35 87.0 74.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="78.0" cy="58.0" rx="6" ry="4.2" transform="rotate(-15 78.0 58.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="91.0" cy="62.0" rx="6" ry="4.2" transform="rotate(35 91.0 62.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><circle cx="60.0" cy="32.0" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="63.8" cy="34.8" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="62.4" cy="39.2" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="57.6" cy="39.2" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="56.2" cy="34.8" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="34.0" cy="66.0" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="37.8" cy="68.8" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="36.4" cy="73.2" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="31.6" cy="73.2" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="30.2" cy="68.8" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="86.0" cy="44.0" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="89.8" cy="46.8" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="88.4" cy="51.2" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="83.6" cy="51.2" r="2.4" fill="#ecd9e4" stroke-width="1"/><circle cx="82.2" cy="46.8" r="2.4" fill="#ecd9e4" stroke-width="1"/></g></svg><h3>Orégano</h3><span class="latin">hojas pequeñas</span><p>Aroma intenso, hojas pequeñas y generosas.</p></article>
+<article class="herb reveal" style="transition-delay:70ms"><svg viewBox="0 0 120 160" aria-hidden="true"><g class="sway" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 156c12-3 24-3 36 0s24 3 36 0" stroke-width="1.2" opacity=".55"/><path d="M60 156C60 120 59 80 61 16"/><ellipse cx="40.0" cy="146.0" rx="22" ry="7" transform="rotate(-18 40.0 146.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M22.2 151.8L57.8 140.2" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="80.0" cy="146.0" rx="22" ry="7" transform="rotate(18 80.0 146.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M62.2 140.2L97.8 151.8" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="44.0" cy="132.0" rx="19" ry="6.5" transform="rotate(-32 44.0 132.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M30.3 140.6L57.7 123.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="77.0" cy="130.0" rx="19" ry="6.5" transform="rotate(30 77.0 130.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M63.0 121.9L91.0 138.1" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="50.0" cy="112.0" rx="14" ry="5" transform="rotate(-40 50.0 112.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M40.9 119.6L59.1 104.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="71.0" cy="106.0" rx="14" ry="5" transform="rotate(38 71.0 106.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M61.6 98.7L80.4 113.3" stroke="currentColor" stroke-width=".9" opacity=".7"/><path d="M60 92c-4 -1 -9 -3 -12 -7" stroke-width="1.2"/><ellipse cx="48" cy="84" rx="4.6" ry="3" transform="rotate(40 48 84)" fill="#a893cf" stroke-width="1.1"/><path d="M60 83c4 -1 9 -3 12 -7" stroke-width="1.2"/><ellipse cx="72" cy="75" rx="4.6" ry="3" transform="rotate(-40 72 75)" fill="#a893cf" stroke-width="1.1"/><path d="M60 74c-4 -1 -9 -3 -12 -7" stroke-width="1.2"/><ellipse cx="48" cy="66" rx="4.6" ry="3" transform="rotate(40 48 66)" fill="#a893cf" stroke-width="1.1"/><path d="M60 65c4 -1 9 -3 12 -7" stroke-width="1.2"/><ellipse cx="72" cy="57" rx="4.6" ry="3" transform="rotate(-40 72 57)" fill="#a893cf" stroke-width="1.1"/><path d="M60 56c-4 -1 -9 -3 -12 -7" stroke-width="1.2"/><ellipse cx="48" cy="48" rx="4.6" ry="3" transform="rotate(40 48 48)" fill="#a893cf" stroke-width="1.1"/><path d="M60 47c4 -1 9 -3 12 -7" stroke-width="1.2"/><ellipse cx="72" cy="39" rx="4.6" ry="3" transform="rotate(-40 72 39)" fill="#a893cf" stroke-width="1.1"/><path d="M60 38c-4 -1 -9 -3 -12 -7" stroke-width="1.2"/><ellipse cx="48" cy="30" rx="4.6" ry="3" transform="rotate(40 48 30)" fill="#a893cf" stroke-width="1.1"/><path d="M60 29c4 -1 9 -3 12 -7" stroke-width="1.2"/><ellipse cx="72" cy="21" rx="4.6" ry="3" transform="rotate(-40 72 21)" fill="#a893cf" stroke-width="1.1"/><path d="M60 20c-4 -1 -9 -3 -12 -7" stroke-width="1.2"/><ellipse cx="48" cy="12" rx="4.6" ry="3" transform="rotate(40 48 12)" fill="#a893cf" stroke-width="1.1"/></g></svg><h3>Salvia</h3><span class="latin">flores moradas</span><p>Flores moradas y olor profundo.</p></article>
+<article class="herb reveal" style="transition-delay:140ms"><svg viewBox="0 0 120 160" aria-hidden="true"><g class="sway" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 156c12-3 24-3 36 0s24 3 36 0" stroke-width="1.2" opacity=".55"/><path d="M60 156C60 126 60 86 60 30"/><ellipse cx="38.0" cy="132.0" rx="20" ry="11" transform="rotate(-14 38.0 132.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M21.5 136.1L54.5 127.9" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="82.0" cy="132.0" rx="20" ry="11" transform="rotate(14 82.0 132.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M65.5 127.9L98.5 136.1" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="40.0" cy="104.0" rx="18" ry="10" transform="rotate(-14 40.0 104.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M25.2 107.7L54.8 100.3" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="80.0" cy="104.0" rx="18" ry="10" transform="rotate(14 80.0 104.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M65.2 100.3L94.8 107.7" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="43.0" cy="78.0" rx="15" ry="8.5" transform="rotate(-14 43.0 78.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M30.6 81.1L55.4 74.9" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="77.0" cy="78.0" rx="15" ry="8.5" transform="rotate(14 77.0 78.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M64.6 74.9L89.4 81.1" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="46.0" cy="56.0" rx="12" ry="7" transform="rotate(-14 46.0 56.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M36.1 58.5L55.9 53.5" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="74.0" cy="56.0" rx="12" ry="7" transform="rotate(14 74.0 56.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M64.1 53.5L83.9 58.5" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="54.0" cy="36.0" rx="8" ry="5" transform="rotate(-60 54.0 36.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M50.6 41.9L57.4 30.1" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="66.0" cy="36.0" rx="8" ry="5" transform="rotate(60 66.0 36.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M62.6 30.1L69.4 41.9" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="60.0" cy="24.0" rx="7" ry="4.4" transform="rotate(90 60.0 24.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M60.0 18.1L60.0 29.9" stroke="currentColor" stroke-width=".9" opacity=".7"/></g></svg><h3>Albahaca</h3><span class="latin">aroma dulce</span><p>Hojas suaves, aroma dulce y fresco.</p></article>
+<article class="herb reveal" style="transition-delay:210ms"><svg viewBox="0 0 120 160" aria-hidden="true"><g class="sway" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 150c12-3 24-3 36 0s24 3 36 0" stroke-width="1.2" opacity=".55"/><path d="M14 142C34 136 56 146 78 138S104 132 110 136"/><path d="M30 142C28 120 32 100 30 84"/><ellipse cx="21.0" cy="128.0" rx="9" ry="6.5" transform="rotate(-18 21.0 128.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M13.7 130.4L28.3 125.6" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="39.0" cy="126.0" rx="9" ry="6.5" transform="rotate(18 39.0 126.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M31.7 123.6L46.3 128.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="21.0" cy="112.0" rx="9" ry="6.5" transform="rotate(-18 21.0 112.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M13.7 114.4L28.3 109.6" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="39.0" cy="110.0" rx="9" ry="6.5" transform="rotate(18 39.0 110.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M31.7 107.6L46.3 112.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="21.0" cy="96.0" rx="9" ry="6.5" transform="rotate(-18 21.0 96.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M13.7 98.4L28.3 93.6" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="39.0" cy="94.0" rx="9" ry="6.5" transform="rotate(18 39.0 94.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M31.7 91.6L46.3 96.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="30.0" cy="80.0" rx="6" ry="4.4" transform="rotate(90 30.0 80.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M30.0 74.9L30.0 85.1" stroke="currentColor" stroke-width=".9" opacity=".7"/><path d="M58 142C56 120 60 100 58 70"/><ellipse cx="49.0" cy="128.0" rx="9" ry="6.5" transform="rotate(-18 49.0 128.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M41.7 130.4L56.3 125.6" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="67.0" cy="126.0" rx="9" ry="6.5" transform="rotate(18 67.0 126.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M59.7 123.6L74.3 128.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="49.0" cy="112.0" rx="9" ry="6.5" transform="rotate(-18 49.0 112.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M41.7 114.4L56.3 109.6" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="67.0" cy="110.0" rx="9" ry="6.5" transform="rotate(18 67.0 110.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M59.7 107.6L74.3 112.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="49.0" cy="96.0" rx="9" ry="6.5" transform="rotate(-18 49.0 96.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M41.7 98.4L56.3 93.6" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="67.0" cy="94.0" rx="9" ry="6.5" transform="rotate(18 67.0 94.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M59.7 91.6L74.3 96.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="49.0" cy="80.0" rx="9" ry="6.5" transform="rotate(-18 49.0 80.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M41.7 82.4L56.3 77.6" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="67.0" cy="78.0" rx="9" ry="6.5" transform="rotate(18 67.0 78.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M59.7 75.6L74.3 80.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="58.0" cy="66.0" rx="6" ry="4.4" transform="rotate(90 58.0 66.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M58.0 60.9L58.0 71.1" stroke="currentColor" stroke-width=".9" opacity=".7"/><path d="M88 142C86 120 90 100 88 92"/><ellipse cx="79.0" cy="128.0" rx="9" ry="6.5" transform="rotate(-18 79.0 128.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M71.7 130.4L86.3 125.6" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="97.0" cy="126.0" rx="9" ry="6.5" transform="rotate(18 97.0 126.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M89.7 123.6L104.3 128.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="79.0" cy="112.0" rx="9" ry="6.5" transform="rotate(-18 79.0 112.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M71.7 114.4L86.3 109.6" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="97.0" cy="110.0" rx="9" ry="6.5" transform="rotate(18 97.0 110.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M89.7 107.6L104.3 112.4" stroke="currentColor" stroke-width=".9" opacity=".7"/><ellipse cx="88.0" cy="88.0" rx="6" ry="4.4" transform="rotate(90 88.0 88.0)" fill="#dfe8d5" stroke="currentColor" stroke-width="1.4"/><path d="M88.0 82.9L88.0 93.1" stroke="currentColor" stroke-width=".9" opacity=".7"/><path d="M20 142l-4 8M20 142l1 9M20 142l5 7" stroke-width="1" opacity=".55"/><path d="M46 142l-4 8M46 142l1 9M46 142l5 7" stroke-width="1" opacity=".55"/><path d="M72 142l-4 8M72 142l1 9M72 142l5 7" stroke-width="1" opacity=".55"/><path d="M100 142l-4 8M100 142l1 9M100 142l5 7" stroke-width="1" opacity=".55"/></g></svg><h3>Yerba buena</h3><span class="latin">rastrera</span><p>Rastrera, fresca, se expande sola.</p></article>
+<article class="herb reveal" style="transition-delay:280ms"><svg viewBox="0 0 120 160" aria-hidden="true"><g class="sway" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 156c12-3 24-3 36 0s24 3 36 0" stroke-width="1.2" opacity=".55"/><path d="M60 156C59 120 61 80 60 34"/><path d="M60 110C52 100 46 92 40 70"/><path d="M60 92C68 82 74 72 80 56"/><path d="M60 132l-12.2 6.8" stroke-width="1"/><path d="M60 132l-13.5 3.6" stroke-width="1"/><path d="M60 132l-14.0 0.2" stroke-width="1"/><path d="M60 132l-13.6 -3.1" stroke-width="1"/><path d="M60 132l-12.5 -6.4" stroke-width="1"/><path d="M60 132l-10.6 -9.2" stroke-width="1"/><path d="M60 132l-8.0 -11.5" stroke-width="1"/><path d="M60 132l5.0 -13.1" stroke-width="1"/><path d="M60 132l8.0 -11.5" stroke-width="1"/><path d="M60 132l10.6 -9.2" stroke-width="1"/><path d="M60 132l12.5 -6.4" stroke-width="1"/><path d="M60 132l13.6 -3.1" stroke-width="1"/><path d="M60 132l14.0 0.2" stroke-width="1"/><path d="M60 132l13.5 3.6" stroke-width="1"/><path d="M60 118l-12.8 5.7" stroke-width="1"/><path d="M60 118l-13.8 2.4" stroke-width="1"/><path d="M60 118l-14.0 -1.0" stroke-width="1"/><path d="M60 118l-13.3 -4.3" stroke-width="1"/><path d="M60 118l-11.9 -7.4" stroke-width="1"/><path d="M60 118l-9.7 -10.1" stroke-width="1"/><path d="M60 118l-7.0 -12.1" stroke-width="1"/><path d="M60 120l3.9 -13.5" stroke-width="1"/><path d="M60 120l7.0 -12.1" stroke-width="1"/><path d="M60 120l9.7 -10.1" stroke-width="1"/><path d="M60 120l11.9 -7.4" stroke-width="1"/><path d="M60 120l13.3 -4.3" stroke-width="1"/><path d="M60 120l14.0 -1.0" stroke-width="1"/><path d="M60 120l13.8 2.4" stroke-width="1"/><path d="M48 98l-13.2 4.6" stroke-width="1"/><path d="M48 98l-13.9 1.2" stroke-width="1"/><path d="M48 98l-13.8 -2.2" stroke-width="1"/><path d="M48 98l-12.9 -5.5" stroke-width="1"/><path d="M48 98l-11.2 -8.4" stroke-width="1"/><path d="M48 98l-8.8 -10.9" stroke-width="1"/><path d="M48 98l-5.9 -12.7" stroke-width="1"/><path d="M74 78l2.7 -13.7" stroke-width="1"/><path d="M74 78l5.9 -12.7" stroke-width="1"/><path d="M74 78l8.8 -10.9" stroke-width="1"/><path d="M74 78l11.2 -8.4" stroke-width="1"/><path d="M74 78l12.9 -5.5" stroke-width="1"/><path d="M74 78l13.8 -2.2" stroke-width="1"/><path d="M74 78l13.9 1.2" stroke-width="1"/><path d="M60 72l-12.2 6.8" stroke-width="1"/><path d="M60 72l-13.5 3.6" stroke-width="1"/><path d="M60 72l-14.0 0.2" stroke-width="1"/><path d="M60 72l-13.6 -3.1" stroke-width="1"/><path d="M60 72l-12.5 -6.4" stroke-width="1"/><path d="M60 72l-10.6 -9.2" stroke-width="1"/><path d="M60 72l-8.0 -11.5" stroke-width="1"/><path d="M60 60l5.0 -13.1" stroke-width="1"/><path d="M60 60l8.0 -11.5" stroke-width="1"/><path d="M60 60l10.6 -9.2" stroke-width="1"/><path d="M60 60l12.5 -6.4" stroke-width="1"/><path d="M60 60l13.6 -3.1" stroke-width="1"/><path d="M60 60l14.0 0.2" stroke-width="1"/><path d="M60 60l13.5 3.6" stroke-width="1"/><path d="M60 34L43.1 27.8" stroke-width="1"/><circle cx="43.1" cy="27.8" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L45.7 23.0" stroke-width="1"/><circle cx="45.7" cy="23.0" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L49.7 19.3" stroke-width="1"/><circle cx="49.7" cy="19.3" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L54.6 16.8" stroke-width="1"/><circle cx="54.6" cy="16.8" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L60.0 16.0" stroke-width="1"/><circle cx="60.0" cy="16.0" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L65.4 16.8" stroke-width="1"/><circle cx="65.4" cy="16.8" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L70.3 19.3" stroke-width="1"/><circle cx="70.3" cy="19.3" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L74.3 23.0" stroke-width="1"/><circle cx="74.3" cy="23.0" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M60 34L76.9 27.8" stroke-width="1"/><circle cx="76.9" cy="27.8" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L29.7 64.2" stroke-width="1"/><circle cx="29.7" cy="64.2" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L32.0 60.5" stroke-width="1"/><circle cx="32.0" cy="60.5" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L35.6 57.9" stroke-width="1"/><circle cx="35.6" cy="57.9" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L40.0 57.0" stroke-width="1"/><circle cx="40.0" cy="57.0" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L44.4 57.9" stroke-width="1"/><circle cx="44.4" cy="57.9" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L48.0 60.5" stroke-width="1"/><circle cx="48.0" cy="60.5" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M40 68L50.3 64.2" stroke-width="1"/><circle cx="50.3" cy="64.2" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L69.7 50.2" stroke-width="1"/><circle cx="69.7" cy="50.2" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L72.0 46.5" stroke-width="1"/><circle cx="72.0" cy="46.5" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L75.6 43.9" stroke-width="1"/><circle cx="75.6" cy="43.9" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L80.0 43.0" stroke-width="1"/><circle cx="80.0" cy="43.0" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L84.4 43.9" stroke-width="1"/><circle cx="84.4" cy="43.9" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L88.0 46.5" stroke-width="1"/><circle cx="88.0" cy="46.5" r="2.3" fill="#e7b53a" stroke-width=".9"/><path d="M80 54L90.3 50.2" stroke-width="1"/><circle cx="90.3" cy="50.2" r="2.3" fill="#e7b53a" stroke-width=".9"/></g></svg><h3>Hinojo</h3><span class="latin">alta y plumosa</span><p>Alta y plumosa, aroma anisado.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RED ================= -->
+<section class="section" id="red" aria-labelledby="red-title">
+  <div class="wrap network-grid">
+    <div class="web reveal" aria-hidden="true">
+      <svg class="lines" viewBox="0 0 100 100"><path d="M50 50Q56.5 32.2 50.0 12.0" fill="none" stroke="currentColor" stroke-width=".45" stroke-dasharray="1.6 1.6"/><circle cx="50.0" cy="12.0" r="1" fill="currentColor"/><path d="M50 50Q68.7 46.7 82.9 31.0" fill="none" stroke="currentColor" stroke-width=".45" stroke-dasharray="1.6 1.6"/><circle cx="82.9" cy="31.0" r="1" fill="currentColor"/><path d="M50 50Q62.2 64.6 82.9 69.0" fill="none" stroke="currentColor" stroke-width=".45" stroke-dasharray="1.6 1.6"/><circle cx="82.9" cy="69.0" r="1" fill="currentColor"/><path d="M50 50Q43.5 67.8 50.0 88.0" fill="none" stroke="currentColor" stroke-width=".45" stroke-dasharray="1.6 1.6"/><circle cx="50.0" cy="88.0" r="1" fill="currentColor"/><path d="M50 50Q31.3 53.3 17.1 69.0" fill="none" stroke="currentColor" stroke-width=".45" stroke-dasharray="1.6 1.6"/><circle cx="17.1" cy="69.0" r="1" fill="currentColor"/><path d="M50 50Q37.8 35.4 17.1 31.0" fill="none" stroke="currentColor" stroke-width=".45" stroke-dasharray="1.6 1.6"/><circle cx="17.1" cy="31.0" r="1" fill="currentColor"/></svg><div class="core">La Chagra<small>aula viva</small></div><div class="node" data-k="troja" style="left:50.0%;top:12.0%">La Troja</div><div class="node" data-k="bosque" style="left:82.9%;top:31.0%">El Bosque</div><div class="node" data-k="semillero" style="left:82.9%;top:69.0%">Semillero y Placita</div><div class="node" data-k="tasabia" style="left:50.0%;top:88.0%">Chagra Ta Sabia</div><div class="node" data-k="cocina" style="left:17.1%;top:69.0%">Cocina</div><div class="node" data-k="grupo" style="left:17.1%;top:31.0%">Grupo de trabajo</div>
+    </div>
+    <div class="reveal">
+      <p class="kicker"><span class="num">04</span> Articulación</p>
+      <h2 class="section-title" id="red-title">La chagra <em>se sostiene en red</em></h2>
+      <svg class="vine-rule" aria-hidden="true"><use href="#rule"/></svg>
+      <p class="section-lead" style="margin-bottom:1.8rem">El sostenimiento de la Chagra se realiza mediante la colaboración y el intercambio con los distintos espacios del Aula Viva.</p>
+      <ul class="network-list" id="network-list">
+        <li data-k="troja"><b>La Troja</b><span>Préstamo de herramientas para el trabajo de campo.</span></li>
+        <li data-k="bosque"><b>El Bosque</b><span>Aporte de abono y materia orgánica para nutrir el suelo.</span></li>
+        <li data-k="semillero"><b>Semillero y Placita</b><span>Suministro de semillas y plántulas.</span></li>
+        <li data-k="tasabia"><b>Chagra Ta Sabia</b><span>Orientación y conocimiento sobre el manejo del territorio.</span></li>
+        <li data-k="cocina"><b>Cocina</b><span>Material orgánico para elaboración de compost.</span></li>
+        <li data-k="grupo"><b>Grupo de trabajo</b><span>Manos, trabajo colaborativo, riego continuo y dedicación.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERÍA ================= -->
+<section class="section gallery-section" id="galeria" aria-labelledby="galeria-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker"><span class="num">05</span> Galería</p>
+      <h2 class="section-title" id="galeria-title">Lo vivido <em>en la chagra</em></h2>
+      <svg class="vine-rule" aria-hidden="true"><use href="#rule"/></svg>
+      <p class="section-lead">Jornadas de trabajo, plantas que crecen y manos que cuidan. Toca una foto para verla en grande.</p>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head reveal">
+        <span class="date">12 de noviembre</span>
+        <h3>Manos en la tierra</h3>
+        <span class="count">20 fotografías</span>
+      </div>
+      <div class="masonry">
+        <figure class="shot"><button type="button" data-full="assets/img/p08.webp" data-i="0" aria-label="Ver en grande: Parte del equipo"><img src="assets/thumb/p08.webp" width="540" height="720" alt="Parte del equipo" loading="lazy" decoding="async"><figcaption>Parte del equipo</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p09.webp" data-i="1" aria-label="Ver en grande: Todos a la tierra"><img src="assets/thumb/p09.webp" width="540" height="720" alt="Todos a la tierra" loading="lazy" decoding="async"><figcaption>Todos a la tierra</figcaption></button></figure>
+<figure class="shot taped"><span class="tape" aria-hidden="true"></span><button type="button" data-full="assets/img/p14.webp" data-i="2" aria-label="Ver en grande: Eligiendo una planta"><img src="assets/thumb/p14.webp" width="540" height="720" alt="Eligiendo una planta" loading="lazy" decoding="async"><figcaption>Eligiendo una planta</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p00.webp" data-i="3" aria-label="Ver en grande: Pausa en el pasto antes de empezar"><img src="assets/thumb/p00.webp" width="540" height="720" alt="Pausa en el pasto antes de empezar" loading="lazy" decoding="async"><figcaption>Pausa en el pasto antes de empezar</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p02.webp" data-i="4" aria-label="Ver en grande: Abriendo surco en la cama"><img src="assets/thumb/p02.webp" width="540" height="720" alt="Abriendo surco en la cama" loading="lazy" decoding="async"><figcaption>Abriendo surco en la cama</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p04.webp" data-i="5" aria-label="Ver en grande: Trabajo junto al invernadero"><img src="assets/thumb/p04.webp" width="540" height="720" alt="Trabajo junto al invernadero" loading="lazy" decoding="async"><figcaption>Trabajo junto al invernadero</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p11.webp" data-i="6" aria-label="Ver en grande: Deshierbe en grupo"><img src="assets/thumb/p11.webp" width="540" height="720" alt="Deshierbe en grupo" loading="lazy" decoding="async"><figcaption>Deshierbe en grupo</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p05.webp" data-i="7" aria-label="Ver en grande: Sombrilla contra el sol de la tarde"><img src="assets/thumb/p05.webp" width="540" height="720" alt="Sombrilla contra el sol de la tarde" loading="lazy" decoding="async"><figcaption>Sombrilla contra el sol de la tarde</figcaption></button></figure>
+<figure class="shot taped"><span class="tape" aria-hidden="true"></span><button type="button" data-full="assets/img/p16.webp" data-i="8" aria-label="Ver en grande: Deshierbe a mano"><img src="assets/thumb/p16.webp" width="540" height="720" alt="Deshierbe a mano" loading="lazy" decoding="async"><figcaption>Deshierbe a mano</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p12.webp" data-i="9" aria-label="Ver en grande: Entre coles y kale"><img src="assets/thumb/p12.webp" width="540" height="720" alt="Entre coles y kale" loading="lazy" decoding="async"><figcaption>Entre coles y kale</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p03.webp" data-i="10" aria-label="Ver en grande: Entre ollas de barro y hojas"><img src="assets/thumb/p03.webp" width="540" height="720" alt="Entre ollas de barro y hojas" loading="lazy" decoding="async"><figcaption>Entre ollas de barro y hojas</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p18.webp" data-i="11" aria-label="Ver en grande: Revisando de cerca"><img src="assets/thumb/p18.webp" width="540" height="720" alt="Revisando de cerca" loading="lazy" decoding="async"><figcaption>Revisando de cerca</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p06.webp" data-i="12" aria-label="Ver en grande: Recorriendo la cama asignada"><img src="assets/thumb/p06.webp" width="540" height="720" alt="Recorriendo la cama asignada" loading="lazy" decoding="async"><figcaption>Recorriendo la cama asignada</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p20.webp" data-i="13" aria-label="Ver en grande: Marcando los bordes de la cama"><img src="assets/thumb/p20.webp" width="540" height="720" alt="Marcando los bordes de la cama" loading="lazy" decoding="async"><figcaption>Marcando los bordes de la cama</figcaption></button></figure>
+<figure class="shot taped"><span class="tape" aria-hidden="true"></span><button type="button" data-full="assets/img/p13.webp" data-i="14" aria-label="Ver en grande: Cada quien en su cama"><img src="assets/thumb/p13.webp" width="540" height="720" alt="Cada quien en su cama" loading="lazy" decoding="async"><figcaption>Cada quien en su cama</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p17.webp" data-i="15" aria-label="Ver en grande: Cuidando la cama bajo el mural"><img src="assets/thumb/p17.webp" width="540" height="720" alt="Cuidando la cama bajo el mural" loading="lazy" decoding="async"><figcaption>Cuidando la cama bajo el mural</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p21.webp" data-i="16" aria-label="Ver en grande: Caminando entre camas"><img src="assets/thumb/p21.webp" width="540" height="720" alt="Caminando entre camas" loading="lazy" decoding="async"><figcaption>Caminando entre camas</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p01.webp" data-i="17" aria-label="Ver en grande: Herramientas y caminos de viruta"><img src="assets/thumb/p01.webp" width="540" height="720" alt="Herramientas y caminos de viruta" loading="lazy" decoding="async"><figcaption>Herramientas y caminos de viruta</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p19.webp" data-i="18" aria-label="Ver en grande: Camas en plena tarde"><img src="assets/thumb/p19.webp" width="540" height="720" alt="Camas en plena tarde" loading="lazy" decoding="async"><figcaption>Camas en plena tarde</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p07.webp" data-i="19" aria-label="Ver en grande: Un descanso sobre el pasto"><img src="assets/thumb/p07.webp" width="405" height="720" alt="Un descanso sobre el pasto" loading="lazy" decoding="async"><figcaption>Un descanso sobre el pasto</figcaption></button></figure>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-head reveal">
+        <span class="date">26 de noviembre</span>
+        <h3>La chagra hoy</h3>
+        <span class="count">21 fotografías</span>
+      </div>
+      <div class="masonry">
+        <figure class="shot taped"><span class="tape" aria-hidden="true"></span><button type="button" data-full="assets/img/p25.webp" data-i="20" aria-label="Ver en grande: La chagra y la maloca"><img src="assets/thumb/p25.webp" width="720" height="540" alt="La chagra y la maloca" loading="lazy" decoding="async"><figcaption>La chagra y la maloca</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p42.webp" data-i="21" aria-label="Ver en grande: Sembrando"><img src="assets/thumb/p42.webp" width="540" height="720" alt="Sembrando" loading="lazy" decoding="async"><figcaption>Sembrando</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p33.webp" data-i="22" aria-label="Ver en grande: Kale toscano"><img src="assets/thumb/p33.webp" width="540" height="720" alt="Kale toscano" loading="lazy" decoding="async"><figcaption>Kale toscano</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p24.webp" data-i="23" aria-label="Ver en grande: Semillas para compartir"><img src="assets/thumb/p24.webp" width="540" height="720" alt="Semillas para compartir" loading="lazy" decoding="async"><figcaption>Semillas para compartir</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p27.webp" data-i="24" aria-label="Ver en grande: Caléndulas en flor"><img src="assets/thumb/p27.webp" width="540" height="720" alt="Caléndulas en flor" loading="lazy" decoding="async"><figcaption>Caléndulas en flor</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p31.webp" data-i="25" aria-label="Ver en grande: Cartuchos"><img src="assets/thumb/p31.webp" width="540" height="720" alt="Cartuchos" loading="lazy" decoding="async"><figcaption>Cartuchos</figcaption></button></figure>
+<figure class="shot taped"><span class="tape" aria-hidden="true"></span><button type="button" data-full="assets/img/p40.webp" data-i="26" aria-label="Ver en grande: Plántulas listas para sembrar"><img src="assets/thumb/p40.webp" width="540" height="720" alt="Plántulas listas para sembrar" loading="lazy" decoding="async"><figcaption>Plántulas listas para sembrar</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p23.webp" data-i="27" aria-label="Ver en grande: Una plántula recién asomada"><img src="assets/thumb/p23.webp" width="405" height="720" alt="Una plántula recién asomada" loading="lazy" decoding="async"><figcaption>Una plántula recién asomada</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p32.webp" data-i="28" aria-label="Ver en grande: Margaritas"><img src="assets/thumb/p32.webp" width="540" height="720" alt="Margaritas" loading="lazy" decoding="async"><figcaption>Margaritas</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p26.webp" data-i="29" aria-label="Ver en grande: Kale rizado y lechuga"><img src="assets/thumb/p26.webp" width="540" height="720" alt="Kale rizado y lechuga" loading="lazy" decoding="async"><figcaption>Kale rizado y lechuga</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p39.webp" data-i="30" aria-label="Ver en grande: Un mar de verde"><img src="assets/thumb/p39.webp" width="540" height="720" alt="Un mar de verde" loading="lazy" decoding="async"><figcaption>Un mar de verde</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p28.webp" data-i="31" aria-label="Ver en grande: Hojas anchas y brillantes"><img src="assets/thumb/p28.webp" width="540" height="720" alt="Hojas anchas y brillantes" loading="lazy" decoding="async"><figcaption>Hojas anchas y brillantes</figcaption></button></figure>
+<figure class="shot taped"><span class="tape" aria-hidden="true"></span><button type="button" data-full="assets/img/p29.webp" data-i="32" aria-label="Ver en grande: Creciendo junto a la olla de barro"><img src="assets/thumb/p29.webp" width="540" height="720" alt="Creciendo junto a la olla de barro" loading="lazy" decoding="async"><figcaption>Creciendo junto a la olla de barro</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p36.webp" data-i="33" aria-label="Ver en grande: Luz entre las hojas"><img src="assets/thumb/p36.webp" width="540" height="720" alt="Luz entre las hojas" loading="lazy" decoding="async"><figcaption>Luz entre las hojas</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p41.webp" data-i="34" aria-label="Ver en grande: Manos alrededor de la cama"><img src="assets/thumb/p41.webp" width="405" height="720" alt="Manos alrededor de la cama" loading="lazy" decoding="async"><figcaption>Manos alrededor de la cama</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p38.webp" data-i="35" aria-label="Ver en grande: Cielo sobre la chagra"><img src="assets/thumb/p38.webp" width="540" height="720" alt="Cielo sobre la chagra" loading="lazy" decoding="async"><figcaption>Cielo sobre la chagra</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p30.webp" data-i="36" aria-label="Ver en grande: Lo que crece por su cuenta"><img src="assets/thumb/p30.webp" width="540" height="720" alt="Lo que crece por su cuenta" loading="lazy" decoding="async"><figcaption>Lo que crece por su cuenta</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p35.webp" data-i="37" aria-label="Ver en grande: Follaje alto"><img src="assets/thumb/p35.webp" width="540" height="720" alt="Follaje alto" loading="lazy" decoding="async"><figcaption>Follaje alto</figcaption></button></figure>
+<figure class="shot taped"><span class="tape" aria-hidden="true"></span><button type="button" data-full="assets/img/p37.webp" data-i="38" aria-label="Ver en grande: Un árbol joven en el borde"><img src="assets/thumb/p37.webp" width="540" height="720" alt="Un árbol joven en el borde" loading="lazy" decoding="async"><figcaption>Un árbol joven en el borde</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p34.webp" data-i="39" aria-label="Ver en grande: Plantas que ya dieron semilla"><img src="assets/thumb/p34.webp" width="540" height="720" alt="Plantas que ya dieron semilla" loading="lazy" decoding="async"><figcaption>Plantas que ya dieron semilla</figcaption></button></figure>
+<figure class="shot"><button type="button" data-full="assets/img/p44.webp" data-i="40" aria-label="Ver en grande: Herramienta en la tierra"><img src="assets/thumb/p44.webp" width="540" height="720" alt="Herramienta en la tierra" loading="lazy" decoding="async"><figcaption>Herramienta en la tierra</figcaption></button></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EQUIPO ================= -->
+<section class="section" id="equipo" aria-labelledby="equipo-title">
+  <div class="wrap">
+    <div class="team-head reveal">
+      <p class="kicker"><span class="num">06</span> Equipo</p>
+      <h2 class="section-title" id="equipo-title">Quienes cultivan <em>este proyecto</em></h2>
+      <svg class="vine-rule" aria-hidden="true"><use href="#rule"/></svg>
+      <p class="section-lead">Un proyecto comunitario hecho entre muchas manos: cada persona sostiene una parte del proceso.</p>
+    </div>
+    <div class="team reveal">
+      <span class="tag">Valeria Stephania Gamba Camargo</span>
+<span class="tag">Neyler Corrales Lario</span>
+<span class="tag">Juan Pablo Prieto Vergara</span>
+<span class="tag">Jaime Alejandro Cuellar Gonzalez</span>
+<span class="tag">Nicolás Cepeda Martínez</span>
+<span class="tag">Solangie Fernandez Rojas</span>
+<span class="tag">Manuela Rivera Gutiérrez</span>
+<span class="tag">Oscar Javier Martinez Zambrano</span>
+<span class="tag">Sergio Quiroga Sandoval</span>
+<span class="tag">Daniela Andrea Blanco Forero</span>
+<span class="tag">Santiago Diaz Aroca</span>
+    </div>
+  </div>
+</section>
+
+<div class="closing">
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 220 34"><use href="#rule" x="0" y="8" width="220" height="18"/></svg></div>
+  <p class="big reveal">Sembrar, cuidar y cosechar: aprender con otros seres y dejar registro de lo vivido.</p>
+</div>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <a class="brand" href="#inicio">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C26 9 27 21 16 29 5 21 6 9 16 3Z" fill="currentColor"/><path d="M16 8v19M16 15l-4-3M16 20l4-3" stroke="#f7f4ec" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+      Aula Viva · La Chagra
+    </a>
+    <span>Cultivándonos — propuesta pedagógica, sensible y comunitaria · 2026</span>
+  </div>
+</footer>
+
+<!-- Visor de fotos -->
+<dialog class="lightbox" id="lightbox" aria-label="Visor de fotografías">
+  <div class="lb-top">
+    <span class="lb-count" id="lb-count"></span>
+    <button class="lb-btn" id="lb-close" aria-label="Cerrar"><svg><use href="#close"/></svg></button>
+  </div>
+  <div class="lb-stage" id="lb-stage">
+    <button class="lb-btn lb-prev" id="lb-prev" aria-label="Foto anterior"><svg><use href="#chev-l"/></svg></button>
+    <img id="lb-img" alt="">
+    <button class="lb-btn lb-next" id="lb-next" aria-label="Foto siguiente"><svg><use href="#chev-r"/></svg></button>
+  </div>
+  <p class="lb-caption" id="lb-caption"></p>
+</dialog>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
