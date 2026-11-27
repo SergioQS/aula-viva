@@ -134,6 +134,7 @@ section { position: relative; }
 .topnav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .brand { display: inline-flex; align-items: center; gap: .55rem; text-decoration: none; color: var(--ink); font-family: var(--f-display); font-size: 1.25rem; }
 .brand svg { width: 26px; height: 26px; color: var(--forest); }
+.brand b { font-weight: 500; color: var(--forest); }
 .topnav ul { list-style: none; display: flex; gap: 1.6rem; margin: 0; padding: 0; }
 .topnav ul a { text-decoration: none; color: var(--ink-soft); font-size: .92rem; position: relative; }
 .topnav ul a::after {
@@ -177,7 +178,7 @@ section { position: relative; }
   color: var(--forest);
 }
 .hero h1 span { display: block; }
-.hero h1 .viva { font-style: italic; color: var(--ink); padding-left: .55em; }
+.hero h1 .viva { font-style: italic; color: var(--ink); font-size: .5em; line-height: 1; padding-left: .12em; margin-top: .18em; letter-spacing: -.02em; }
 .hero .tagline {
   font-family: var(--f-hand);
   font-size: clamp(1.5rem, 2.4vw, 2rem);
@@ -237,8 +238,8 @@ section { position: relative; }
 
 .hero-sprig {
   position: absolute; z-index: 1; pointer-events: none;
-  width: clamp(120px, 15vw, 190px);
-  left: clamp(15rem, 25vw, 20rem); top: -1.5rem;
+  width: clamp(84px, 8vw, 116px);
+  left: clamp(13rem, calc(34.5vw + 1rem), 30rem); top: 3.2rem;
   color: var(--moss);
   opacity: .55;
   transform-origin: 50% 100%;
